@@ -123,45 +123,7 @@ $result = mysqli_query($con, $sql);
 
 
 
-        <div align="center" class="container admissionForm border border-black text-dark">
-            <center>
-                <h1>Admision Form
-            </center><br><br>
 
-
-            <div class="col-4"> </div>
-            <div class="col-8">
-                <form action="checkdata.php" method="post">
-
-                    <div class="row">
-                        <div class="col-4"><label class="form-label text-dark">Name</label></div>
-                        <div class="col-8"><input class="form-control rounded-pill" type="text" name="inputname"></div>
-
-                    </div><br>
-                    <div class="row">
-                        <div class="col-4"><label class="form-label text-dark">Email</label></div>
-                        <div class="col-8"><input class="form-control rounded-pill" type="text" name="inputemail"></div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-4"><label class="form-label text-dark">Mobile</label></div>
-                        <div class="col-8"><input class="form-control rounded-pill" type="text" name="inputmobile"></div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-4"><label class="form-label text-dark">Message</label></div>
-                        <div class="col-8"><textarea class="form-control rounded-pill" name="inputmessage"></textarea></div>
-
-
-                    </div><br>
-                    <div class="row">
-                        <div class="col-3"></div>
-                        <div class="col-6"><button type="submit" class="btn btn-light " name="submitvalue">Submit</button></div>
-                        <div class="col-3"></div>
-
-                    </div>
-                </form>
-            </div>
-            <div class="col-4"> </div>
-        </div>
     </div>
     <footer>
         <h5 class="footer_txt">All @copyright reserver by NE tech Knowledge</h5>
