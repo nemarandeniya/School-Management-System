@@ -76,20 +76,23 @@ $result = mysqli_query($con, $sql);
         <div class="container">
             <div class="row">
 
-                <?php
 
-                while ($info = $result->fetch_assoc()) {
-                    # code...
+                <div class="col-md-4">
+                    <img src="pics/teacher1 (2).jpg" class="teacher">
+                    <h3>Mr.Jones</h3>
+                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.?</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/teacher5.jpg" class="teacher">
+                    <h3>Mr.Marcus</h3>
+                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.?</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="pics/teacher6.png" class="teacher">
+                    <h3>Mr.Cornalius</h3>
+                    <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.?</h5>
+                </div>
 
-                ?>
-                    <div class="col-4">
-                        <img src="<?php echo "{$info['image']}" ?>">
-                        <h3><?php echo "{$info['name']}" ?></h3>
-                        <h5><?php echo "{$info['description']}" ?></h5>
-                    </div>
-                <?php
-                }
-                ?>
             </div>
         </div>
 
