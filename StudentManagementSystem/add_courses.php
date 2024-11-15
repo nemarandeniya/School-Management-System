@@ -19,7 +19,7 @@ if (isset($_POST['submitvalue'])) {
     $file = $_FILES['image']['name'];
     $dst = "./image/" . $file;
     $dst_db = "image/" . $file;
-    move_uploaded_file($_FILES['image']['name'], $dst);
+    move_uploaded_file($_FILES['image']['tmp_name'], $dst);
 
     $sql = "INSERT INTO course(name,description,image) VALUES('$cname','$cdescription','$dst_db')";
     $result  = mysqli_query($con, $sql);

@@ -26,9 +26,12 @@ $row = $result->fetch_assoc();
 if (isset($_POST['updatevalue'])) {
     $name = $_POST['inputname'];
     $description = $_POST['description'];
-    $image = $_POST['image'];
+    $image = $_FILES['image']['name'];
+    $dst = "./image/" . $image;
+    $dst_db = "image/" . $image;
+    move_uploaded_file($_FILES['image']['tmp_name'], $dst);
 
-    $sql2 = "UPDATE teacher SET name='$name',description='$description',image='$image' WHERE id='$id'";
+    $sql2 = "UPDATE teacher SET name='$name',description='$description',image='$dst' WHERE id='$id'";
     $result2 = mysqli_query($con, $sql2);
 
     if ($result2) {
@@ -84,7 +87,7 @@ if (isset($_POST['updatevalue'])) {
 
             <div class="col-4"> </div>
             <div class="col-8">
-                <form action="#" method="post">
+                <form action="#" method="post" enctype="multipart/form-data">
 
                     <div class="row">
                         <div class="col-4"><label class="form-label text-dark">Name</label></div>

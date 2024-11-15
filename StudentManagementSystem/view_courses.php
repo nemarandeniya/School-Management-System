@@ -61,8 +61,8 @@ $result = mysqli_query($con, $sql);
                             <td style="padding: 10px;"><?php echo "{$row['name']}" ?></td>
                             <td style="padding: 10px;"><?php echo "{$row['description']}" ?></td>
                             <td style="padding: 10px;"><img height="100px" width="100px" src="<?php echo "{$row['image']}" ?>"> </td>
-                            <td style="padding: 10px;"><?php echo "<a style='color: red;' href='delete_teacher.php?teacher_id={$row['id']}'><center><i class='fa-solid fa-trash'></i></center></a>"; ?></td>
-                            <td style="padding: 10px;"><?php echo "<a style='color: red;' href='update_teacher.php?teacher_id={$row['id']}'><center><i class='fa-solid fa-pen-to-square'></i></center></a>" ?></td>
+                            <td style="padding: 10px;"><?php echo "<a style='color: red;' href='delete_course.php?course_id={$row['id']}'><center><i class='fa-solid fa-trash'></i></center></a>"; ?></td>
+                            <td style="padding: 10px;"><?php echo "<a style='color: red;' href='update_course.php?course_id={$row['id']}'><center><i class='fa-solid fa-pen-to-square'></i></center></a>" ?></td>
 
 
                         </tr>
